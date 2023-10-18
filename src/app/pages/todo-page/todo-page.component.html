@@ -1,0 +1,11 @@
+<section class="page">
+    <app-todo-input></app-todo-input>
+    <div *ngFor="let item of todoItems">
+        <app-todo-item
+            *ngIf="!item.done"
+            [id]="item.id"
+            [name]="item.name"
+            [description]="item.description">
+        </app-todo-item>
+    </div>
+</section>

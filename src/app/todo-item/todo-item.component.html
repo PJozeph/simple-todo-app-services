@@ -1,0 +1,14 @@
+<section class="container">
+    <div>
+        <label>Név:</label>
+        {{name}}
+    </div>
+    <div>
+        <label>Részletek</label>
+        {{description}}
+    </div>
+    <div>
+        <button (click)="onCompleteClick(id)">Kész</button>
+    </div>
+</section>
+<ng-content></ng-content>
